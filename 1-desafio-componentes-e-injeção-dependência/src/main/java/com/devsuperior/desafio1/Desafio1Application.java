@@ -21,15 +21,12 @@ public class Desafio1Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Order order = new Order(134, 150.0, 20.0);
-		System.out.println("Pedido Código: " + order.getCode());
-		System.out.println("Valor Total: " + orderService.total(order));
+		System.out.println(orderService.total(order));
 
 		Order order2 = new Order(2282, 800.0, 10.0);
-		System.out.println("Pedido Código: " + order2.getCode());
-		System.out.println("Valor Total: " + orderService.total(order2));
+		System.out.println(orderService.total(order2));
 
 		Order order3 = new Order(1309, 95.90, 0.0);
-		System.out.println("Pedido Código: " + order3.getCode());
-		System.out.println("Valor Total: " + orderService.total(order3));
+		System.out.println(orderService.total(order3));
 	}
 }
